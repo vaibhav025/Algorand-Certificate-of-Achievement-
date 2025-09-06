@@ -34,7 +34,7 @@ By using Algorand’s fast and low-cost transactions, the project ensures that r
 
 ## 🔗 Deployed Smart Contract
 
-👉 Contract Address / Link: **XXX**
+👉 Contract Address / Link: **Algorand**
 
 ---
 
