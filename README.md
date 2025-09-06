@@ -1,3 +1,6 @@
+https://lora.algokit.io/testnet/application/745460949
+<img width="1867" height="957" alt="image" src="https://github.com/user-attachments/assets/57bcfb01-1c81-4759-8497-5470ff572c9a" />
+
 # 🎓 Certificate of Achievement dApp (Algorand)
 
 A decentralized application (dApp) built on the **Algorand blockchain**, designed to issue, store, and verify digital certificates of achievement in a secure and transparent way.
