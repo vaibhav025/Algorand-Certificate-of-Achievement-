@@ -1,0 +1,495 @@
+{
+  "version": 3,
+  "sources": [
+    "C:/Users/VAIBHAV SINGLA/Algorand/projects/Algorand/smart_contracts/hello_world/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAIE;AACiB;AADjB;AAGA;AACiB;AADjB;AALF;;AAAA;;;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;;;AAUE;;AAAA;AAAA;AAAA;;AAAA;AAVF;;;AAAA;;;AAAA;;;AAAA;;;AAUE;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;;AAVF;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;;AAUE;;;AARA;AASE;;AAAA;AANF;AAOE;;AAAA;AACO;;;;;;;;;;;;;;;AAAA;;AAAA;AAAyB;;;;;;;AAAzB;AAAA;;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "bytecblock \"student\" \"\" \"award\""
+    },
+    "18": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "reinterpret_bool%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bool%0#0"
+      ]
+    },
+    "20": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "23": {
+      "op": "bytec_0 // \"student\"",
+      "defined_out": [
+        "\"student\""
+      ],
+      "stack_out": [
+        "\"student\""
+      ]
+    },
+    "24": {
+      "op": "bytec_1 // \"\"",
+      "defined_out": [
+        "\"\"",
+        "\"student\""
+      ],
+      "stack_out": [
+        "\"student\"",
+        "\"\""
+      ]
+    },
+    "25": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "26": {
+      "op": "bytec_2 // \"award\"",
+      "defined_out": [
+        "\"award\""
+      ],
+      "stack_out": [
+        "\"award\""
+      ]
+    },
+    "27": {
+      "op": "bytec_1 // \"\"",
+      "stack_out": [
+        "\"award\"",
+        "\"\""
+      ]
+    },
+    "28": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "29": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "31": {
+      "op": "bz main_bare_routing@8",
+      "stack_out": []
+    },
+    "34": {
+      "op": "pushbytes 0x2c8c7e0b // method \"issueCert(string,string)string\"",
+      "defined_out": [
+        "Method(issueCert(string,string)string)"
+      ],
+      "stack_out": [
+        "Method(issueCert(string,string)string)"
+      ]
+    },
+    "40": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(issueCert(string,string)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(issueCert(string,string)string)",
+        "tmp%2#0"
+      ]
+    },
+    "43": {
+      "op": "match main_issueCert_route@5",
+      "stack_out": []
+    },
+    "47": {
+      "block": "main_after_if_else@12",
+      "stack_in": [],
+      "op": "pushint 0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "49": {
+      "op": "return",
+      "stack_out": []
+    },
+    "50": {
+      "block": "main_issueCert_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "52": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "53": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "54": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "56": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "57": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "60": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "63": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "66": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "69": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::Certificate.issueCert",
+      "op": "callsub issueCert",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "72": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "73": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "74": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "75": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "78": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "79": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "80": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "86": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "87": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "88": {
+      "op": "log",
+      "stack_out": []
+    },
+    "89": {
+      "op": "pushint 1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "91": {
+      "op": "return",
+      "stack_out": []
+    },
+    "92": {
+      "block": "main_bare_routing@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "94": {
+      "op": "bnz main_after_if_else@12",
+      "stack_out": []
+    },
+    "97": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "99": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "100": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "101": {
+      "op": "pushint 1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "103": {
+      "op": "return",
+      "stack_out": []
+    },
+    "104": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::Certificate.issueCert",
+      "params": {
+        "name#0": "bytes",
+        "award#0": "bytes"
+      },
+      "block": "issueCert",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "107": {
+      "op": "bytec_0 // \"student\"",
+      "defined_out": [
+        "\"student\""
+      ],
+      "stack_out": [
+        "\"student\""
+      ]
+    },
+    "108": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"student\"",
+        "name#0 (copy)"
+      ],
+      "stack_out": [
+        "\"student\"",
+        "name#0 (copy)"
+      ]
+    },
+    "110": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "111": {
+      "op": "bytec_2 // \"award\"",
+      "defined_out": [
+        "\"award\""
+      ],
+      "stack_out": [
+        "\"award\""
+      ]
+    },
+    "112": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"award\"",
+        "award#0 (copy)"
+      ],
+      "stack_out": [
+        "\"award\"",
+        "award#0 (copy)"
+      ]
+    },
+    "114": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "115": {
+      "op": "pushbytes \"Certificate: \"",
+      "defined_out": [
+        "\"Certificate: \""
+      ],
+      "stack_out": [
+        "\"Certificate: \""
+      ]
+    },
+    "130": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "\"Certificate: \"",
+        "name#0 (copy)"
+      ]
+    },
+    "132": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "133": {
+      "op": "pushbytes \" got \"",
+      "defined_out": [
+        "\" got \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" got \""
+      ]
+    },
+    "140": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "141": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%1#0",
+        "award#0 (copy)"
+      ]
+    },
+    "143": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "144": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
